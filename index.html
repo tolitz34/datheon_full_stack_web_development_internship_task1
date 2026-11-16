@@ -1,0 +1,845 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Full Stack Web Developer Portfolio">
+    <title>Developer Portfolio | Full Stack Developer</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#101D35',
+                        orange: '#FF8A32'
+                    }
+                }
+            }
+        }
+    </script>
+
+   
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <nav class="navbar container">
+
+        <a href="#home" class="logo">
+            Dev<span>Portfolio.</span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+
+            <button class="theme-btn" id="themeToggle"
+                aria-label="Switch color theme">
+                <i class="fas fa-sun"></i>
+            </button>
+
+            <a href="#contact" class="btn nav-hire">
+                Hire Me
+            </a>
+
+            <button class="menu-btn" id="menuToggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+
+        </div>
+    </nav>
+</header>
+
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="container hero-grid">
+
+        <div>
+            <div class="hero-tag">
+                <i class="fas fa-circle"></i>
+                Available for opportunities
+            </div>
+
+            <h1>
+                Hello, I'm a
+                <span class="accent">Full Stack</span>
+                Developer.
+            </h1>
+
+            <p class="hero-text">
+                I design and develop modern web applications,
+                responsive websites, and powerful backend systems
+                that solve real-world problems.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">
+                    View My Projects
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+                <a href="resume.pdf" download class="btn btn-outline">
+                    <i class="fas fa-download"></i>
+                    Download Resume
+                </a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/tolitz34" target="_blank"
+                    rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/joselito-pasculado-352412237/" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="mailto: tolitz34@gmail.com"
+                    aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="images/joselito.png" 
+                alt="Description of the image"
+                class="profile-image">
+
+            <div class="floating-card">
+                <h4 class="accent font-bold">Full Stack Developer</h4>
+                <p style="color:var(--muted);font-size:12px;margin-top:6px;">
+                    Building digital solutions
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ABOUT -->
+<section class="section" id="about">
+    <div class="container about-grid">
+
+        <div class="about-card">
+            <i class="fas fa-laptop-code"></i>
+            <h3 class="text-xl font-bold">Developer & Creator</h3>
+            <p style="color:var(--muted);margin-top:12px;">
+                Turning ideas into applications.
+            </p>
+        </div>
+
+        <div>
+            <p class="section-label">About Me</p>
+
+            <h2 class="section-title">
+                Passionate About
+                <span class="accent">Building Web Solutions</span>
+            </h2>
+
+            <p class="about-text">
+                I am a web developer focused on building functional,
+                secure, and user-friendly applications. I enjoy
+                developing both frontend interfaces and backend
+                systems using modern technologies.
+            </p>
+
+            <p class="about-text">
+                My interests include Laravel application development,
+                database management, API integration, responsive
+                web design, and solving business problems through technology.
+            </p>
+
+            <a href="#contact" class="btn">
+                Let's Connect
+            </a>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <h3>03+</h3>
+                    <p>Featured Projects</p>
+                </div>
+
+                <div class="stat-item">
+                    <h3>08+</h3>
+                    <p>Technologies</p>
+                </div>
+
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Learning Mindset</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- RESUME -->
+<section class="section" id="resume"
+    style="background:var(--surface);">
+
+    <div class="container">
+
+        <p class="section-label">My Credentials</p>
+
+        <h2 class="section-title">
+            Resume & <span class="accent">Experience</span>
+        </h2>
+
+        <p class="section-description">
+            My educational background, professional experience,
+            and development journey.
+        </p>
+
+        <div class="resume-grid">
+
+            <div class="resume-column">
+                <h3><i class="fas fa-graduation-cap accent"></i>
+                    Education</h3>
+
+                <article class="resume-item surface">
+                    <p class="date">2000 - 2004</p>
+                    <h4>Bachelor of Science in Electronics Engineering</h4>
+                    <p>College of Technological Sciences - Cebu</p>
+                    <p>To be the center of technology and skills training in the country.</p>
+                </article>
+
+                <article class="resume-item surface">
+                    <p class="date">2026</p>
+                    <h4>Relevant Training</h4>
+                    <p>Training Institution</p>
+                    <p>Add relevant courses or technical training.</p>
+                </article>
+            </div>
+
+            <div class="resume-column">
+                <h3><i class="fas fa-briefcase accent"></i>
+                    Experience</h3>
+
+                <article class="resume-item surface">
+                    <p class="date">2023</p>
+                    <h4>Web Developer / Personal Projects</h4>
+                    <p>Independent Development</p>
+                    <p>Developed web applications using PHP,
+                    Laravel, MySQL, JavaScript, and Tailwind CSS.</p>
+                </article>
+
+                <article class="resume-item surface">
+                    <p class="date">YOUR YEAR</p>
+                    <h4>Application Tester</h4>
+                    <p>uTest Platform</p>
+                    <p>Describe your actual software testing
+                    responsibilities and achievements.</p>
+                </article>
+            </div>
+
+        </div>
+
+        <div class="mt-8">
+            <a href="resume.pdf" download class="btn">
+                <i class="fas fa-file-pdf"></i>
+                Download Full Resume
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+    <div class="container">
+
+        <p class="section-label">Technical Expertise</p>
+
+        <h2 class="section-title">
+            My Tech <span class="accent">Stack</span>
+        </h2>
+
+        <p class="section-description">
+            Technologies, frameworks, and tools I use
+            to develop modern applications.
+        </p>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h4>HTML5</h4>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h4>CSS3</h4>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <h4>JavaScript</h4>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-php"></i>
+                <h4>PHP</h4>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-laravel"></i>
+                <h4>Laravel</h4>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <h4>MySQL</h4>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-wind"></i>
+                <h4>Tailwind CSS</h4>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-bootstrap"></i>
+                <h4>Bootstrap</h4>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-git-alt"></i>
+                <h4>Git</h4>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-github"></i>
+                <h4>GitHub</h4>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h4>VS Code</h4>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-server"></i>
+                <h4>XAMPP</h4>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section class="section" id="projects"
+    style="background:var(--surface);">
+
+    <div class="container">
+
+        <p class="section-label">My Portfolio</p>
+
+        <h2 class="section-title">
+            Featured <span class="accent">Projects</span>
+        </h2>
+
+        <p class="section-description">
+            A selection of web applications and projects
+            demonstrating my development skills.
+        </p>
+
+        <div class="projects-grid">
+
+            <article class="project-card">
+                <img src="https://placehold.co/600x350/172943/FF8A32?text=Honey+POS"
+                    alt="Honey POS project"
+                    class="project-image">
+
+                <div class="project-content">
+                    <span class="project-category">LARAVEL APPLICATION</span>
+                    <h3>Honey POS</h3>
+
+                    <p>
+                        A point-of-sale system for managing inventory,
+                        products, sales, cashiers, and business reports.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Laravel</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                    </div>
+
+                    <button class="view-project"
+                        onclick="openProject(0)">
+                        View Project Details →
+                    </button>
+                </div>
+            </article>
+
+
+            <article class="project-card">
+                <img src="https://placehold.co/600x350/172943/FF8A32?text=Admin+Dashboard"
+                    alt="Admin dashboard project"
+                    class="project-image">
+
+                <div class="project-content">
+                    <span class="project-category">FRONTEND DEVELOPMENT</span>
+                    <h3>Admin Dashboard</h3>
+
+                    <p>
+                        A responsive administration dashboard with
+                        interactive statistics and modern UI components.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>Tailwind</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <button class="view-project"
+                        onclick="openProject(1)">
+                        View Project Details →
+                    </button>
+                </div>
+            </article>
+
+
+            <article class="project-card">
+                <img src="https://placehold.co/600x350/172943/FF8A32?text=Attendance+System"
+                    alt="Employee attendance system"
+                    class="project-image">
+
+                <div class="project-content">
+                    <span class="project-category">WEB APPLICATION</span>
+                    <h3>Attendance System</h3>
+
+                    <p>
+                        An employee attendance application with
+                        GPS-based attendance and reporting features.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Laravel</span>
+                        <span>MySQL</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <button class="view-project"
+                        onclick="openProject(2)">
+                        View Project Details →
+                    </button>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- PROJECT MODAL -->
+<div class="modal" id="projectModal"
+    role="dialog" aria-modal="true"
+    aria-labelledby="modalTitle"
+    onclick="if(event.target === this) closeProject()">
+
+    <div class="modal-content">
+
+        <button class="modal-close"
+            onclick="closeProject()" aria-label="Close modal">
+            &times;
+        </button>
+
+        <span class="section-label">Project Information</span>
+
+        <h2 id="modalTitle">Project Name</h2>
+
+        <p id="modalDescription"></p>
+
+        <div class="modal-tags" id="modalTags"></div>
+
+        <a href="#" id="modalLink" target="_blank"
+            rel="noopener noreferrer" class="btn">
+            Visit Project
+            <i class="fas fa-arrow-right"></i>
+        </a>
+
+    </div>
+</div>
+
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+    <div class="container">
+
+        <p class="section-label">Get In Touch</p>
+
+        <h2 class="section-title">
+            Let's Build Something <span class="accent">Together</span>
+        </h2>
+
+        <p class="section-description">
+            Interested in working together or have a project
+            in mind? Feel free to reach out.
+        </p>
+
+        <div class="contact-grid">
+
+            <div>
+
+                <div class="contact-info surface">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4>Email Address</h4>
+                        <p>your-email@example.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-info surface">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div>
+                        <h4>GitHub</h4>
+                        <p>github.com/yourusername</p>
+                    </div>
+                </div>
+
+                <div class="contact-info surface">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div>
+                        <h4>LinkedIn</h4>
+                        <p>linkedin.com/in/yourusername</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <form class="contact-form surface"
+                id="contactForm">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name"
+                        class="form-control"
+                        placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email"
+                        class="form-control"
+                        placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message"
+                        class="form-control"
+                        rows="5"
+                        placeholder="Write your message..."
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="btn">
+                    Send Message
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+
+                <p id="formStatus"
+                    style="color:var(--muted);margin-top:15px;font-size:13px;"
+                    role="status" aria-live="polite">
+                </p>
+
+            </form>
+
+        </div>
+    </div>
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+
+        <a href="#home" class="logo">
+            Dev<span>Portfolio.</span>
+        </a>
+
+        <p style="margin:15px 0;">
+            Designed and developed with passion.
+        </p>
+
+        <p>
+            &copy; <span id="year"></span>
+            Developer Portfolio. All rights reserved.
+        </p>
+
+    </div>
+</footer>
+
+
+<script>
+
+// ==================================
+// MOBILE NAVIGATION
+// ==================================
+
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+
+menuToggle.addEventListener('click', () => {
+
+    const isOpen = navLinks.classList.toggle('open');
+
+    menuToggle.setAttribute('aria-expanded', isOpen);
+
+    menuToggle.innerHTML = isOpen
+        ? '<i class="fas fa-times"></i>'
+        : '<i class="fas fa-bars"></i>';
+
+});
+
+document.querySelectorAll('.nav-links a').forEach(link => {
+
+    link.addEventListener('click', () => {
+
+        navLinks.classList.remove('open');
+
+        menuToggle.setAttribute('aria-expanded', 'false');
+
+        menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+
+    });
+
+});
+
+
+// ==================================
+// DARK / LIGHT THEME
+// ==================================
+
+const themeToggle = document.getElementById('themeToggle');
+const html = document.documentElement;
+
+function applyTheme(theme) {
+
+    html.setAttribute('data-theme', theme);
+
+    themeToggle.innerHTML = theme === 'dark'
+        ? '<i class="fas fa-sun"></i>'
+        : '<i class="fas fa-moon"></i>';
+
+    themeToggle.setAttribute(
+        'aria-label',
+        theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'
+    );
+
+}
+
+const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
+
+applyTheme(savedTheme);
+
+themeToggle.addEventListener('click', () => {
+
+    const currentTheme = html.getAttribute('data-theme');
+
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+    localStorage.setItem('portfolio-theme', newTheme);
+
+    applyTheme(newTheme);
+
+});
+
+
+// ==================================
+// PROJECT DATA
+// ==================================
+
+const projects = [
+
+    {
+        title: "Honey POS",
+        description: "A Laravel-based point-of-sale application featuring inventory management, product management, barcode scanning, sales transactions, cashier accounts, and business reports.",
+        technologies: ["Laravel", "PHP", "MySQL", "Tailwind CSS", "JavaScript"],
+        link: "#"
+    },
+
+    {
+        title: "Admin Dashboard",
+        description: "A responsive administration dashboard with modern user interface components, statistics, interactive cards, and data visualization.",
+        technologies: ["HTML5", "CSS3", "Tailwind CSS", "JavaScript"],
+        link: "#"
+    },
+
+    {
+        title: "Attendance System",
+        description: "An employee attendance management application designed for employee accounts, time-in and time-out, GPS-based attendance, and reporting.",
+        technologies: ["Laravel", "PHP", "MySQL", "JavaScript"],
+        link: "#"
+    }
+
+];
+
+
+// ==================================
+// OPEN PROJECT MODAL
+// ==================================
+
+function openProject(index) {
+
+    const project = projects[index];
+
+    if (!project) return;
+
+    document.getElementById('modalTitle').textContent =
+        project.title;
+
+    document.getElementById('modalDescription').textContent =
+        project.description;
+
+    document.getElementById('modalLink').href =
+        project.link;
+
+    const tags = document.getElementById('modalTags');
+
+    tags.replaceChildren();
+
+    project.technologies.forEach(tech => {
+
+        const span = document.createElement('span');
+
+        span.textContent = tech;
+
+        tags.appendChild(span);
+
+    });
+
+    document.getElementById('projectModal').classList.add('show');
+
+    document.body.style.overflow = 'hidden';
+
+    document.querySelector('.modal-close').focus();
+
+}
+
+
+// ==================================
+// CLOSE PROJECT MODAL
+// ==================================
+
+function closeProject() {
+
+    document.getElementById('projectModal').classList.remove('show');
+
+    document.body.style.overflow = '';
+
+}
+
+
+// CLOSE MODAL WITH ESCAPE KEY
+
+document.addEventListener('keydown', event => {
+
+    if (event.key === 'Escape') {
+        closeProject();
+    }
+
+});
+
+
+// ==================================
+// CONTACT FORM
+// ==================================
+
+document.getElementById('contactForm').addEventListener('submit', event => {
+
+    event.preventDefault();
+
+    document.getElementById('formStatus').textContent =
+        'Demo form only. Connect a backend to send messages.';
+
+});
+
+
+// ==================================
+// SMOOTH SCROLL ACTIVE NAVIGATION
+// ==================================
+
+const sections = document.querySelectorAll('main section[id]');
+const navItems = document.querySelectorAll('.nav-links a');
+
+const observer = new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            navItems.forEach(link => {
+
+                link.classList.toggle(
+                    'active',
+                    link.getAttribute('href') === '#' + entry.target.id
+                );
+
+            });
+
+        }
+
+    });
+
+}, {
+    rootMargin: '-30% 0px -60% 0px'
+});
+
+sections.forEach(section => observer.observe(section));
+
+
+// ==================================
+// COPYRIGHT YEAR
+// ==================================
+
+document.getElementById('year').textContent =
+    new Date().getFullYear();
+
+</script>
+
+</body>
+</html>
